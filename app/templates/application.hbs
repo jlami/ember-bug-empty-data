@@ -8,3 +8,5 @@ Author count: {{model.authors.length}} (Should be 0, is 2) <br/>
 {{#each model.authors as |a|}}
 {{a.id}}<br/>
 {{/each}}
+
+<button {{action 'test'}}>Force refresh</button>

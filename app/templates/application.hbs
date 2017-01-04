@@ -1,10 +1,10 @@
 <h1>Testing a weird bug:</h1>
-Length: {{model.length}}
-{{#each model as |p|}}
-{{p.name}} by {{p.author.name}}<br/>
+Post count: {{model.posts.length}} <br/>
+{{#each model.posts as |p|}}
+{{p.name}} by {{p.author.name}} ({{p.author.id}})<br/>
 {{/each}}
-<br>
-<br>
-{{outlet}}
-<br>
-<br>
+
+Author count: {{model.authors.length}} (Should be 0, is 2) <br/>
+{{#each model.authors as |a|}}
+{{a.id}}<br/>
+{{/each}}

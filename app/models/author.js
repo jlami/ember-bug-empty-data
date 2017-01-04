@@ -8,7 +8,7 @@ let author = Model.extend({
 
 author.reopenClass({
   FIXTURES: [
-    {id:'doesexist', name: 'author1'}
+//    {id:'doesexist', name: 'author1'}
   ],
 });
 
